@@ -245,21 +245,31 @@ def get_messages_from_channel(channel_path):
     print(f"Number of messages in channel: {len(df)}")
 
     return df
+
+import datetime
+
 def convert_2_timestamp(column, data):
-    """convert from unix time to readable timestamp
-        args: column: columns that needs to be converted to timestamp
-                data: data that has the specified column
+    """Converts Unix time to readable timestamp.
+    
+    Args:
+        column (str): Column that needs to be converted to a timestamp.
+        data (pandas.DataFrame): Data that has the specified column.
+        
+    Returns:
+        list: List of readable timestamps converted from Unix time.
     """
     if column in data.columns.values:
         timestamp_ = []
         for time_unix in data[column]:
-            if time_unix == 0:
+            if time_unix is None:
+                timestamp_.append(None)
+            elif time_unix == 0:
                 timestamp_.append(0)
             else:
-                a = datetime.datetime.fromtimestamp(float(time_unix))
-                timestamp_.append(a.strftime('%Y-%m-%d %H:%M:%S'))
+                timestamp = datetime.datetime.fromtimestamp(float(time_unix))
+                timestamp_.append(timestamp.strftime('%Y-%m-%d %H:%M:%S'))
         return timestamp_
-    else: 
+    else:
         print(f"{column} not in data")
 
 def get_tagged_users(df):

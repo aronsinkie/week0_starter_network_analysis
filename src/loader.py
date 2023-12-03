@@ -150,7 +150,7 @@ class SlackDataLoader:
         """ specify path to get json files"""
         combined = []
         comm_dict = {}
-        for json_file in glob.glob(f"{path}*.json"):
+        for json_file in glob.glob(f"{path}/**/*.json"):
             print("pppp",json_file)
             with open(json_file, 'r') as slack_data:
                 combined.append(slack_data)
