@@ -1,5 +1,5 @@
 # Task 1
-    - To restructure my code, I begin by moving the non-plotting functions from the python package "notebooks/parse_slack_data.ipynb '' notebook. two python files, "loader.py" and "utils.py", within the
+-To restructure my code, I begin by moving the non-plotting functions from the python package "notebooks/parse_slack_data.ipynb '' notebook. two python files, "loader.py" and "utils.py", within the
 "src'' directory will serve as dedicated locations for data loading functions and utility functions, respectively. By doing this,I am organizing a codebase and separating different concerns into specialized
 files.
   - Once I move the functions, you can utilize them in the "parse_slack_data.ipynb" notebook. To load data, you can now use the "SlackDataLoader" class from "src/loader.py". This class will handle all the
