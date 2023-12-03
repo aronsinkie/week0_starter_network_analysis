@@ -8,4 +8,4 @@
 Perform EDA analysis to answer the following questions
 
 
-https://github.com/aronsinkie/Semitic-NLP/assets/74707268/e3fd5002-9af2-47be-9581-94958e8964fe
+https://github.com/aronsinkie/Semitic-NLP/issues/1#issuecomment-1837588928
