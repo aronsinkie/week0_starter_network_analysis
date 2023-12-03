@@ -1,4 +1,4 @@
-## the short video for strealit dashboerd
+# The short video for strealit dashbord
 
 https://github.com/aronsinkie/Semitic-NLP/assets/74707268/bfa3588c-b0d4-4890-abae-5b04addd797b
 
